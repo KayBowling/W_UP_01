@@ -60,9 +60,18 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 
+
+This boxplot shows that skill players can do more than the line players. The most pushups that the line player did is thirty-five and the most that a slill player has done is about hundred and five. 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+This table shows that skill players are on average able to do about fifty pushups in two minutes and the line players are able to do about seventeen. 
 
 ## Inferential Results
 
